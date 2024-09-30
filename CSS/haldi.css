@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Times New Roman;
+    background-color: rgb(255, 255, 255);;
+}
+
+/* section header start */
+.top{
+    height: auto;
+    display: flex;
+    
+    
+}
+.top img{
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+.navbar-collapse ul  a{
+    font-size: 16px;
+    color: black;
+    font-family: Space Grotesk ;
+    
+}
+
+
+.header {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 81px;
+}
+.header img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+}
+.navbar-collapse ul{
+    font-size: 16px;
+    color: black;
+    font-family: Space Grotesk ;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.navbar-collapse ul li:hover{
+    text-decoration: underline;
+
+}
+
+.nav-item .active{
+    
+    font-weight: bolder;
+}
+.nav-item:active{
+    font-weight: bolder;
+}
+
+
+@media (max-width: 990px) {
+    .header {
+        display: none;
+    }
+    .navbarlg {
+        display: none;
+    }
+}
+
+
+/* section header end */
+
+
+/* section bride-to-be start */
+#bride .col-lg-3{
+    padding: 0 !important;
+    height: 300px !important;
+}
+#bride  .bride-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    gap: 0;
+}
+@media (max-width:990px) {
+    #bride .container-fluid{
+        margin-top: 15% !important;
+    }
+    #bride .bride_col{
+        height: 500px !important;
+        padding: 20px !important;
+    }
+    #bride .bride-img{
+        height: 100% ;
+        background-size: cover;
+    }
+    
+}
+@media (max-width:660px) {
+    #bride .container-fluid{
+        margin-top: 15% !important;
+    }
+    #bride .bride_col{
+        height: 300px !important;
+        padding: 20px !important;
+    }
+    #bride .bride-img{
+        height: 100% ;
+        background-size: cover;
+    }
+    
+}
+@media (max-width:450px) {
+    #bride .container-fluid{
+        margin-top: 20% !important;
+    }
+    #bride .bride_col{
+        height: 200px !important;
+        padding: 10px !important;
+    }
+    #bride .bride-img{
+        height: 100% ;
+        background-size: cover;
+    }
+    
+}
+@media (max-width:320px) {
+    #bride .container-fluid{
+        margin-top: 25% !important;
+    }
+    #bride .bride_col{
+        height: 150px !important;
+        padding: 5px !important;
+    }
+    #bride .bride-img{
+        height: 100% ;
+        background-size: cover;
+    }
+    
+}
+
+
+/* section bride-to-be end */
+
+
+
+/* section footer start */
+
+.footer {
+    padding-top: 30px !important;
+    color: aliceblue;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    height: auto;
+    background-color: rgb(3, 3, 3);
+    
+}
+.footer .row .icons a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer .row .icons .line {
+    display: block;
+    width: 25%;
+    height: 2px; 
+    background-color: aliceblue; 
+    margin: 12px 0; 
+}
+.footer-links a{
+    font-size: 18px;
+    
+    transition: transform 0.5s;
+    border-bottom: 2px solid transparent;
+    
+}
+.footer-links a:hover{
+    
+    transform: scale(0.9);
+    border-color: #bfd7f0;
+}
+
+@media(max-width: 900px) {
+    .footer .row .col-lg-4{
+        border: none;
+    }
+    .footer  .row{
+        display: grid;
+        place-items: center;
+    }
+}
+@media(max-width: 450px) {
+
+    .footer .row .first-col img {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .footer .row .first-col h1 {
+        font-size: 22px !important;
+        display: block !important;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+    
+
+/* section footer end */
