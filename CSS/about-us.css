@@ -22,10 +22,11 @@ body{
     height: 70px;
 }
 .navbar-collapse ul  a{
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     font-family: Space Grotesk ;
-    
+    padding: 8px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 
@@ -45,17 +46,20 @@ body{
     display: flex;
     justify-content: center;
 }
-.navbar-collapse ul{
-    font-size: 16px;
+.navbar-collapse ul {
+    font-size: 17px;
     color: black;
-    font-family: Space Grotesk ;
+    font-family: Space Grotesk; ;
     display: flex;
     justify-content: space-between;
     gap: 50px;
 }
-.navbar-collapse ul li:hover{
-    text-decoration: underline;
-
+.navbar-collapse ul li:hover a {
+    color: #3e3939; 
+}
+.navbar-collapse ul li:hover {
+    border-bottom: 1.5px solid black;
+    transition-delay: 0.2s; 
 }
 
 .nav-item .active{
@@ -74,19 +78,76 @@ body{
     .navbarlg {
         display: none;
     }
+    
 }
 
 
 /* section header end */
-
-.card-img-top:hover{
+.card-img-top {
+    transition: transform 0.3s ease;
+  }
+  
+  .card-img-top:hover {
     cursor: pointer;
     transform: scale(0.9);
+    transition-delay: 0.2s;
   }
+  .members{
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 990px) {
+    .hero-video {
+      margin: auto;
+      width: 80%;
+      height: fit-content;
+      margin-top: 25px;
+    }
+  
+    .team-cards {
+      margin-left: 0; /* Ensures no left margin on smaller screens */
+      justify-content: center; /* Centers the cards */
+    }
+  }
+  
+  @media (min-width: 990px) {
+    .hero-video {
+      margin: auto;
+      width: 100%;
+      height: fit-content;
+      padding: 40px;
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 770px) {
+    .about-description{
+        font-size: 17px !important;
+    }
+    .about-heading{
+        font-size: 20px !important;
+        padding: 10px !important;
+        margin-bottom: 20px !important;
+    }
+  }
+ 
+
+  
+  
+  
+
+  
 
 
 
 /* section footer start */
+@media (max-width: 550px) {
+    .footer-logo-img{
+        width: 60px !important;
+        height: 70px !important;
+    }
+  }
 
 .footer {
     padding-top: 30px !important;

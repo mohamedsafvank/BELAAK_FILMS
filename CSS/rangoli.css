@@ -22,9 +22,11 @@ body{
     height: 70px;
 }
 .navbar-collapse ul  a{
-    font-size: 16px;
+    font-size: 18px;
     color: black;
     font-family: Space Grotesk ;
+    padding: 8px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
     
 }
 
@@ -54,8 +56,8 @@ body{
     gap: 50px;
 }
 .navbar-collapse ul li:hover{
-    text-decoration: underline;
-
+    border-bottom: 1.5px solid black;
+    transition-delay: 0.2s; 
 }
 
 .nav-item .active{
@@ -152,6 +154,12 @@ body{
 
 
 /* section footer start */
+@media (max-width: 550px) {
+    .footer-logo-img{
+        width: 60px !important;
+        height: 70px !important;
+    }
+  }
 
     .footer {
         padding-top: 30px !important;
